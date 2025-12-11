@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 
 const Tune = () => {
-  const { mood, setMood, showToast, setHistory } = useTonesFlex();
+  const { mood, showToast, setHistory } = useTonesFlex();
   const navigate = useNavigate();
   const [step, setStep] = useState("confirm"); // "confirm" → "loading" → "result"
   const [playlistData, setPlaylistData] = useState(null);
@@ -61,7 +61,6 @@ const Tune = () => {
 
       setPlaylistData(playlistWithId);
       setStep("result");
-      setMood('')
       showToast(
         `Playlist created: "${
           playlistWithId.title.length > 20
