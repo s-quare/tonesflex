@@ -1,6 +1,6 @@
 const Offline = () => {
   return (
-    <div style={{ position: "fixed", top: 0, left: 0, right: 0 }}>
+    <div style={{ zIndex: 200, position: "fixed", top: 0, left: 0, right: 0 }}>
       <div
         className="bg-dark text-white text-center d-grid fw-bold"
         style={{ height: "100vh", placeItems: "center" }}
