@@ -1,68 +1,196 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #f1f2ed;
+  scrollbar-width: none;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-size: 16px;
+  background-color: #f1f2ed !important;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+  transition: linear all 0.3s;
+}
+.bg-img {
+  background: center/cover no-repeat;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.border-black {
+  border: 1px solid black;
+}
+.border-dark {
+  border: 1px solid gray;
+}
+.text-teal {
+  color: #1db954 !important;
+}
+.bg-teal {
+  background-color: #1db954 !important;
+}
+.f-8 {
+  font-size: 8px !important;
+}
+.f-10 {
+  font-size: 10px !important;
+}
+.f-12 {
+  font-size: 12px !important;
+}
+.f-14 {
+  font-size: 14px;
+}
+.f-16 {
+  font-size: 16px;
+}
+.cursor {
+  cursor: pointer;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.monospace {
+  font-family: "Courier New", Courier;
+}
+.italics {
+  font-style: italic;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+.border-black {
+  border: 2px solid black;
+}
+.border-white {
+  border: 2px solid white;
+}
+
+.flex-scroll {
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  padding: 15px 10%;
+  cursor: pointer;
+  > * {
+    flex: 0 0 70%;
+    scroll-snap-align: center;
+  }
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  border-radius: 7.5px !important;
+  padding: 3px 10px;
+  font-weight: bold;
   font-family: inherit;
-  background-color: #1a1a1a;
+  font-size: 14px !important;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  color: white;
+  border: none;
+  outline: none;
+  &:active {
+    filter: brightness(0.75);
+  }
+  &:disabled {
+    filter: brightness(0.5);
+  }
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+input,
+textarea,
+select {
+  border-radius: 5px !important;
+  resize: none !important;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 14px !important;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1.5px solid gray;
+  &:focus {
+    border-color: darkslateblue;
   }
 }
+
+.max-400 {
+  max-width: 400px;
+}
+.max-600 {
+  max-width: 600px;
+}
+.max-500 {
+  max-width: 500px;
+}
+.max-350 {
+  max-width: 350px;
+}
+.max-450 {
+  max-width: 450px;
+}
+.max-800 {
+  max-width: 800px;
+}
+
+.hover-exp {
+  &:hover {
+    transform: scale(1.075);
+  }
+}
+.hover-exp-sm {
+  &:hover {
+    transform: scale(1.015);
+  }
+}
+.hover-dark {
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bg-gradient-teal {
+  background: linear-gradient(135deg, #0dcaf0, #20c997);
+}
+
+.bg-spotify {
+  background-color: #1db954; 
+}
+
+.bg-bg {
+background-color: #f1f2ed;
+}
+

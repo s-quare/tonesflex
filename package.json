@@ -4,17 +4,33 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/ubuntu": "^5.2.8",
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "@google/generative-ai": "^0.24.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.8",
+    "dompurify": "^3.3.1",
+    "html-entities": "^2.6.0",
+    "lottie-react": "^2.4.1",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.10.1",
+    "react-text-area": "^0.1.0",
+    "react-textarea-autosize": "^8.5.9",
+    "react-useanimations": "^2.10.0",
+    "timeago.js": "^4.0.2",
+    "toastify-js": "^1.12.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
